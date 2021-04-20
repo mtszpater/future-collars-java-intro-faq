@@ -1,5 +1,6 @@
 # future-collars-java-intro-faq
 
+
 ### Jak oddać zadania z preworku?
 
 Początkowe zadania (zanim dojdziemy do pierwszego zadania z GITem) w których wymagane jest napisanie kodu powinny zostać wykonane albo zostać oddane albo w formie linku do programu na platformie https://ideone.com/  
