@@ -7,9 +7,9 @@
 
 ## Rekomendowany sposób pracy z gitem
 - Aby zmniejszyć szansę na pojawienie się konfliktów pamiętaj, aby przed rozpoczęciem każdego zadania: 
-  1. Wrócić na główny branch (git checkout nazwa_brancha)
-  2. Zaciągnąć najnowsze zmiany (git pull)
-  3. Stworzyć nowy branch (git checkout -b nazwa_brancha_dla_nowego_zadania)
+  1. Wrócić na główny branch (`git checkout nazwa_brancha`)
+  2. Zaciągnąć najnowsze zmiany (`git pull`)
+  3. Stworzyć nowy branch (`git checkout -b nazwa_brancha_dla_nowego_zadania`)
 
 - Zadania powinny zostać oddane w formie pull requestu (PR). Jeden pull request = jedno zadanie. Link do utworzonego PR wyślij jako komentarz do zadania na platformie.
 - W PR powinny być tylko te pliki, które są wymagane dla danego zadania. 
