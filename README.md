@@ -37,6 +37,41 @@ Nie merguj PR póki nie dostaniesz approve. Zadania zaakceptowane powinny zosta�
 Wszystkie zadania trzymamy w 1 repozytorium - aby zachować porządek zastanów się nad odpowiednią strukturą (np. 1 folder = 1 zadanie, albo 1 folder = 1 lekcja, a w środku kolejne n folderów dla konkretnych zadań w ramach danej lekcji).
 
 
+## Najczęstsze błędy
+
+### Komentarze
+Staraj się unikać komentarzy w kodzie jeżeli jest to możliwe. Nie ma sensu robić komentarzy w stylu:
+```
+// Method returns list with users
+List<String> getUsers(){
+...
+}
+```
+bo jest to oczywiste i wynika z nazwy i sygnatury metody.
+
+Troche więcej o tym czemu komentarze to zło: https://www.freecodecamp.org/news/code-comments-the-good-the-bad-and-the-ugly-be9cc65fbf83/
+Oczywiście czasami komentarz warto dać, ale zastanów się nad tym tysiąc razy czy na pewno jest on konieczny.
+
+### Stałe 
+Jeżeli używasz jakichś stałych w kodzie - zapisz je jako (private) static final type NAME_OF_VARIABLE.
+
+Przykład:
+```
+int calculateSalary() {
+  return dailySalary * 20 <--- czym jest to 20?
+}
+```
+
+Przykład ze stałą:
+```
+int calculateSalary() {
+  return dailySalary * NUMBER_OF_DAYS_IN_MONTH;
+}
+```
+
+
+### Checked vs unchecked exceptions
+Staraj się unikać checked exception. Czemu? https://phauer.com/2015/checked-exceptions-are-evil/
 
 ## Ciekawe linki
 
