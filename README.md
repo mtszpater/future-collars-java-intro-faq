@@ -73,6 +73,11 @@ int calculateSalary() {
 ### Checked vs unchecked exceptions
 Staraj się unikać checked exception. Czemu? https://phauer.com/2015/checked-exceptions-are-evil/
 
+
+### Ścieżki absolutne vs relatywne
+
+Nie używaj ścieżek absolutnych w kodzie np: `C:/Users/pater/projects/file.txt`. Nikt inny nie będzie w stanie uruchomić tego programu, ponieważ mała szansa, że będzie miał taką ścieżkę u siebie. ;) Zamiast tego używaj ścieżek relatywnych. https://www.computerhope.com/issues/ch001708.htm
+
 ## Ciekawe linki
 
 Zapisz sobie link do skrótu konwencji jakie mamy w javie: https://github.com/rahulgoti1/java-naming-conventions#naming-conventions
