@@ -78,6 +78,28 @@ Staraj się unikać checked exception. Czemu? https://phauer.com/2015/checked-ex
 
 Nie używaj ścieżek absolutnych w kodzie np: `C:/Users/pater/projects/file.txt`. Nikt inny nie będzie w stanie uruchomić tego programu, ponieważ mała szansa, że będzie miał taką ścieżkę u siebie. ;) Zamiast tego używaj ścieżek relatywnych. https://www.computerhope.com/issues/ch001708.htm
 
+
+### Struktura testu
+
+Staraj się stosować strukturę testu given when then gdzie:
+- given - dane wejściowe
+- when - wywołanie funkcjonalności, którą testujemy
+- then - asercje czyli sprawdzenie poprawności
+
+Przykład:
+```
+// given
+int minutes = 5;
+
+// when
+int result = TimeConverter.minutesToSeconds(minutes);
+
+// then
+Assertions.assertEquals(result, 300);
+```
+
+Więcej o tym: https://blog.j-labs.pl/index.php?page=2017/02/Given-When-Then-pattern-in-unit-tests
+
 ## Ciekawe linki
 
 Zapisz sobie link do skrótu konwencji jakie mamy w javie: https://github.com/rahulgoti1/java-naming-conventions#naming-conventions
