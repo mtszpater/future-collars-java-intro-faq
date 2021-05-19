@@ -100,6 +100,22 @@ Assertions.assertEquals(result, 300);
 
 Więcej o tym: https://blog.j-labs.pl/index.php?page=2017/02/Given-When-Then-pattern-in-unit-tests
 
+### Nazwa testu
+
+Pamiętaj o poprawnym nazywaniu testów. Nazwa powinna opisywać jaki scenariusz w tym teście sprawdzamy.
+Przykładowa błędna nazwa testu:
+```
+shouldCheckisAdultMethod1()
+shouldCheckisAdultMethod2()
+shouldCheckisAdultMethod3()
+```
+Nie mówią one nic. Wiemy, że testują metodę 'isAdult' i nic więcej. Założmy, ze wywali się `shouldCheckisAdultMethod3()` - nie jesteśmy w stanie powiedzieć (póki nie przeczytamy implementacji) jaki scenariusz się nie powiódł. 
+Poprawna nazwa testu:
+```
+shouldReturnTrueIfPersonIsAdult()
+shouldReturnFalseIfPersonIsNotAdult()
+shouldThrowExceptionIfAgeIsNegative();
+```
 ## Ciekawe linki
 
 Zapisz sobie link do skrótu konwencji jakie mamy w javie: https://github.com/rahulgoti1/java-naming-conventions#naming-conventions
